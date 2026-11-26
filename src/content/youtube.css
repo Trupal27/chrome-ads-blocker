@@ -1,0 +1,25 @@
+/* Hide YouTube ad containers (only while AdShield is on) */
+.adshield-on ytd-ad-slot-renderer,
+.adshield-on ytd-in-feed-ad-layout-renderer,
+.adshield-on ytd-banner-promo-renderer,
+.adshield-on ytd-statement-banner-renderer,
+.adshield-on ytd-display-ad-renderer,
+.adshield-on ytd-promoted-sparkles-web-renderer,
+.adshield-on ytd-promoted-video-renderer,
+.adshield-on ytd-compact-promoted-video-renderer,
+.adshield-on ytd-action-companion-ad-renderer,
+.adshield-on ytd-player-legacy-desktop-watch-ads-renderer,
+.adshield-on ytd-engagement-panel-section-list-renderer[target-id="engagement-panel-ads"],
+.adshield-on #masthead-ad,
+.adshield-on #player-ads,
+.adshield-on #panels > ytd-ads-engagement-panel-content-renderer,
+.adshield-on ytd-rich-item-renderer:has(> #content > ytd-ad-slot-renderer),
+.adshield-on ytd-merch-shelf-renderer,
+.adshield-on .ytp-ad-overlay-container,
+.adshield-on .ytp-ad-image-overlay,
+.adshield-on .ytp-suggested-action,
+.adshield-on ytm-promoted-sparkles-web-renderer,
+.adshield-on ytm-companion-ad-renderer,
+.adshield-on ad-slot-renderer {
+  display: none !important;
+}

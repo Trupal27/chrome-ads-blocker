@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <img src="../icons/icon48.png" alt="" />
+    <div>
+      <h1>AdShield</h1>
+      <p id="site">—</p>
+    </div>
+  </header>
+
+  <section class="toggle-row">
+    <div>
+      <strong id="status">Shields are ON</strong>
+      <small>Blocking ads & trackers everywhere</small>
+    </div>
+    <label class="switch">
+      <input type="checkbox" id="enabled" />
+      <span class="slider"></span>
+    </label>
+  </section>
+
+  <section class="stats">
+    <div><span id="tabCount">0</span><small>blocked on this page</small></div>
+    <div><span id="totalCount">0</span><small>blocked in total</small></div>
+  </section>
+
+  <button id="siteBtn">Turn off for this site</button>
+  <button id="reloadBtn" class="secondary">Reload page</button>
+
+  <footer>Made by Delviix</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
