@@ -1,4 +1,4 @@
-# AdShield network filters
+# Chrome Ads Blocker network filters
 #
 # One Chrome declarativeNetRequest urlFilter per line. Lines starting with # are comments.
 # Syntax: https://developer.chrome.com/docs/extensions/reference/api/declarativeNetRequest#filter-matching-characters

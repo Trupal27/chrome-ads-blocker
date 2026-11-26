@@ -1,4 +1,4 @@
-# Contributing to AdShield
+# Contributing to Chrome Ads Blocker
 
 Thanks for helping. Most useful contributions are small: a missed ad network, a broken site, or an updated YouTube selector.
 

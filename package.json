@@ -1,8 +1,8 @@
 {
-  "name": "adshield",
+  "name": "chrome-ads-blocker",
   "version": "1.0.0",
   "private": true,
-  "description": "AdShield - open source ad, tracker and YouTube ad blocker for Chrome (Manifest V3).",
+  "description": "Chrome Ads Blocker - open source ad, tracker and YouTube ad blocker for Chrome (Manifest V3).",
   "license": "MIT",
   "type": "module",
   "scripts": {

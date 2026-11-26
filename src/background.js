@@ -1,4 +1,4 @@
-// AdShield background service worker
+// Chrome Ads Blocker background service worker
 const WHITELIST_BASE_ID = 100000;
 
 chrome.runtime.onInstalled.addListener(async () => {
@@ -50,8 +50,7 @@ chrome.storage.onChanged.addListener((changes) => {
 
 // ---- Counting ----
 // Blocked network requests are read on demand by the popup via
-// declarativeNetRequest.getMatchedRules (works in Web Store installs,
-// unlike onRuleMatchedDebug). Here we only count skipped YouTube ads.
+// declarativeNetRequest.getMatchedRules. Here we only count skipped YouTube ads.
 async function bumpYt(tabId) {
   const { total = 0 } = await chrome.storage.local.get("total");
   await chrome.storage.local.set({ total: total + 1 });

@@ -1,4 +1,4 @@
-# Push a tag like v1.0.1 to build the store zip and attach it to a GitHub Release.
+# Push a tag like v1.0.1 to build the extension zip and attach it to a GitHub Release.
 name: Release
 
 on:
@@ -24,4 +24,4 @@ jobs:
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "$GITHUB_REF_NAME" dist/*.zip --title "AdShield $GITHUB_REF_NAME" --generate-notes
+        run: gh release create "$GITHUB_REF_NAME" dist/*.zip --title "Chrome Ads Blocker $GITHUB_REF_NAME" --generate-notes

@@ -5,14 +5,14 @@
 
   chrome.storage.local.get({ enabled: true, whitelist: [] }, (s) => {
     enabled = s.enabled && !s.whitelist.includes(location.hostname);
-    document.documentElement.dataset.adshieldOff = enabled ? "0" : "1";
-    document.documentElement.classList.toggle("adshield-on", enabled);
+    document.documentElement.dataset.cabOff = enabled ? "0" : "1";
+    document.documentElement.classList.toggle("cab-on", enabled);
   });
   chrome.storage.onChanged.addListener((c) => {
     if (c.enabled) {
       enabled = c.enabled.newValue;
-      document.documentElement.dataset.adshieldOff = enabled ? "0" : "1";
-      document.documentElement.classList.toggle("adshield-on", enabled);
+      document.documentElement.dataset.cabOff = enabled ? "0" : "1";
+      document.documentElement.classList.toggle("cab-on", enabled);
     }
   });
 

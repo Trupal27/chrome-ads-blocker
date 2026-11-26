@@ -37,7 +37,7 @@
     if (!s.enabled || s.whitelist.includes(location.hostname)) return;
 
     const style = document.createElement("style");
-    style.id = "adshield-cosmetic";
+    style.id = "cab-cosmetic";
     style.textContent = SELECTORS.join(",\n") + " { display: none !important; }";
     (document.head || document.documentElement).appendChild(style);
   });

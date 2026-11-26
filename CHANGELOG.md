@@ -8,5 +8,5 @@
 - Cosmetic hiding of ad slots on websites
 - YouTube ad removal, auto-skip and anti-adblock popup dismissal
 - Popup with master switch, per-site allow list and blocked counters
-- Blocked counts now work in Chrome Web Store installs (`getMatchedRules` instead of the unpacked-only debug event)
+- Blocked counts use `getMatchedRules`, which works in every install type
 - Fewer permissions: removed `tabs`, `declarativeNetRequestFeedback` and `<all_urls>` host access

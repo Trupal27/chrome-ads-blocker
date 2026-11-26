@@ -1,5 +1,5 @@
-// Validates the extension and packages it for the Chrome Web Store.
-//   node scripts/build.mjs           validate + create dist/adshield-<version>.zip
+// Validates the extension and packages it as a zip for GitHub releases.
+//   node scripts/build.mjs           validate + create dist/chrome-ads-blocker-<version>.zip
 //   node scripts/build.mjs --check   validate only (used by CI)
 import { readFileSync, existsSync, mkdirSync, rmSync } from "node:fs";
 import { execFileSync } from "node:child_process";
@@ -64,7 +64,7 @@ console.log(`manifest OK (v${manifest.version})`);
 if (!process.argv.includes("--check")) {
   const dist = join(root, "dist");
   mkdirSync(dist, { recursive: true });
-  const out = join(dist, `adshield-${manifest.version}.zip`);
+  const out = join(dist, `chrome-ads-blocker-${manifest.version}.zip`);
   rmSync(out, { force: true });
   execFileSync("zip", ["-r", "-X", "-q", out, ".", "-x", "*.DS_Store"], { cwd: src, stdio: "inherit" });
   console.log(`packaged ${out}`);

@@ -1,5 +1,5 @@
 name: Site broken
-description: A website doesn't work correctly with AdShield on
+description: A website doesn't work correctly with Chrome Ads Blocker on
 labels: [broken-site]
 body:
   - type: input
@@ -18,5 +18,5 @@ body:
   - type: input
     id: versions
     attributes:
-      label: AdShield and Chrome versions
-      placeholder: AdShield 1.0.0, Chrome 131
+      label: Chrome Ads Blocker and Chrome versions
+      placeholder: Chrome Ads Blocker 1.0.0, Chrome 131

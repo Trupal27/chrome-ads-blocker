@@ -19,5 +19,5 @@ body:
   - type: input
     id: versions
     attributes:
-      label: AdShield and Chrome versions
-      placeholder: AdShield 1.0.0, Chrome 131
+      label: Chrome Ads Blocker and Chrome versions
+      placeholder: Chrome Ads Blocker 1.0.0, Chrome 131

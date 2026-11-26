@@ -1,11 +1,11 @@
 // Runs inside YouTube's own page context, before YouTube's scripts.
 // Strips ad data out of the player responses so ads never get scheduled.
 (() => {
-  if (window.__adshieldMain) return;
-  window.__adshieldMain = true;
+  if (window.__cabMain) return;
+  window.__cabMain = true;
 
   // Respect the on/off switch (set by youtube.js via a DOM attribute).
-  const isOff = () => document.documentElement?.dataset.adshieldOff === "1";
+  const isOff = () => document.documentElement?.dataset.cabOff === "1";
 
   const AD_KEYS = [
     "adPlacements",
